@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111827;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #1e40af;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #3B82f6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header {
+    background-color: #3B82f6;
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+nav ul li{
+    display: flex;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+    transition: opacity 0.3s;
+
+}
+
+nav a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.hero {
+    background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+    color: white;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.hero .container {
+    [] text-align: center;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+
+}
+
+section {
+    padding: 4rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #3B82F6;
+    color: white;
+
+}
+
+.btn-primary:hover {
+    background-color: #1E40AF;
+    transform: tranlateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #3B82F6;
+    border: 2px solid #3B82F6;
+}
+
+.btn-secondary:hover {
+    background-color: #3B82F6;
+    color: white;
+}
+
+.btn-lg {
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+}
+
+.cursor h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.grid-cursor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0, 12px, 24px, rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.crd h3 {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+
+}
+
+.card p {
+    padding: 0 1.5rem;
+    color: #6B7280;
+}
+
+.card .btn {
+    margin: 1.5rem;
+}
+
+.beneficios {
+    background-color: #F3F4F6;
+    /* Fundo cinzento claro */
+}
+
+.beneficios h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.beneficios-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.beneficio-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.beneficio-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1E40AF;
+}
+
+.beneficio-item p {
+    color: #6B7280;
+    line-height: 1.6;
+}
+
+.cta {
+    background: linear-gradient(135deg, #0D9488 0%, #0F766E 100%);
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    border-top: 4px solid #3B82F6;
+}
+
+.cta h2 {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta .btn-primary {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #1F2937;
+    /* Cinzento muito escuro */
+    color: #D1D5DB;
+    /* Texto claro */
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #374151;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section a {
+    color: #D1D5DB;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #3B82F6;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #9CA3AF;
+    font-size: 0.9rem;
+}
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+    .grid-cursos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .beneficios-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile (até 480px) */
+@media (max-width: 480px) {
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.grid-cursos {
+    grid-template-columns: 1fr;
+}
+
+.beneficios-list {
+    grid-template-columns: 1fr;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+}
+
+.footer-content {
+    grid-template-columns: 1fr;
+}
